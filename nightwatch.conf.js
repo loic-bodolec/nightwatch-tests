@@ -1,6 +1,6 @@
 module.exports = {
   src_folders: ['tests'],
-  custom_commands_path: "custom-commands",
+  custom_commands_path: 'custom-commands',
   webdriver: {
     start_process: true,
     server_path: require('chromedriver').path,
@@ -8,14 +8,14 @@ module.exports = {
   },
 
   test_settings: {
-    default : {
+    default: {
       desiredCapabilities: {
-       browserName: 'chrome'
+        browserName: 'chrome'
       },
-      launch_url: "https://nightwatch-demo.netlify.com/",
+      launch_url: 'https://nightwatch-demo.netlify.com/',
       globals: {
         timeToWait: 1001
       }
     }
   }
-}
+};

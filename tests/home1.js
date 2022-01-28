@@ -1,6 +1,6 @@
 module.exports = {
-  after: function(browser) {
-    console.log('I am done.')
+  after: function (browser) {
+    console.log('I am done.');
   },
 
   'Demo test': function (browser) {
@@ -10,6 +10,6 @@ module.exports = {
       .setValue('[data-nw=name-input]', 'Pierre')
       .pause(1000)
       .assert.containsText('[data-nw=welcome-message]', 'Welcome Pierre !')
-      .end()
+      .end();
   }
-}
+};

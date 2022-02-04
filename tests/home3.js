@@ -5,7 +5,7 @@ module.exports = {
       .waitForElementVisible('[data-nw=name-input]')
       .setValue('[data-nw=name-input]', 'Pierre')
       .weirdPause(browser.globals.timeToWait)
-      .assert.containsText('[data-nw=welcome-message]', 'Welcome Pierre !')
+      .assert.textContains('[data-nw=welcome-message]', 'Welcome Pierre !')
       .end();
   }
 };
